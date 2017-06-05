@@ -1,0 +1,161 @@
+/*text: #0B1942
+inline link: #00B7D3
+h2 background: #0B1942
+h2 color: #FFFFFF
+logo background: #F5005B
+navigation background: #7DDFE8
+navigation link color: #FFFFFF
+"Home" nav link background: #00A5BF
+"Calendar" nav link background: #00B7D3
+"Join" nav link background: #00D5E7
+"Up Next" background: #0B1942
+"Up Next" card background #E2E2E2
+calendar background and treatments: #0B1942
+calendar highlighted day: #F5005B
+button background: #F5005B
+copyright text: #FFFFFF*/
+
+/*<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">*/
+/*font-family: 'PT Sans', sans-serif;*/
+
+/*BREAK POINTS
+tablet 545px
+desktop 768px*/
+
+/*Use cursor: pointer; on elements that either link or perform some functionality.*/
+/*Add helpful alternative text to the alt attribute of HTML img images.*/
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-family: 'PT Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0px;
+  font-size: .75em;
+
+}
+
+nav a {
+  width: 100%;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav a:first-child{
+  background-color: #00A5BF;
+}
+nav a:nth-child(2) {
+  background-color: #00B7D3;
+}
+nav a:nth-child(3) {
+  background-color: #00D5E7;
+}
+nav a:nth-child(4) {
+  background-color: #7DDFE8;
+}
+#logo{
+  background: #F5005B;
+  padding: .5em;
+  height: 5em;
+}
+footer {
+  height: 180px;
+}
+header, .wrap{
+  display: flex;
+  width: 100%;
+}
+h2 {
+  background: #0B1942;
+  color: #FFFFFF;
+  padding-left: 1em;
+
+}
+/******    HOME   *******/
+.home-main-container {
+display: flex;
+flex-wrap: wrap;
+
+}
+.articles {
+  width: 100%;
+  line-height: 1.5;
+  font-size: .75em;
+  padding: 1em;
+
+
+}
+.up-next-movies {
+  background: #0B1942;
+  color: #FFFFFF;
+  padding: 1em;
+  width: 100%;
+  margin: 0px;
+  font-size: .75em;
+
+}
+.featured-poster{
+  background: #E2E2E2;
+  padding: 1em;
+  display: flex;
+  flex-wrap: nowrap;
+  color: #0B1942;
+  justify-content: space-between;
+
+}
+.featured-text {
+  width: 48%;
+  padding: 1em;
+}
+.featured-poster img{
+  /*width: 48%;*/
+  height: 13.5em;
+}
+
+.posters-grid{
+    background: #E2E2E2;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    color: #0B1942;
+    justify-content: space-between;
+  }
+  .posters-grid img{
+    /*width: 48%;*/
+    height: 13.5em;
+  }
+  .posters-grid div{
+width: 50%;
+line-height: 1.25;
+}
+/******   CALENDAR   *******/
+.calendar-container {
+  /*background: black;}*/
+}
+tbody {
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding: 1px;
+
+}
+td {
+  background: navy;
+  margin: 10px;
+}
+/******   JOIN   *******/
+.join-main-container{
+  /*background: black;}*/
+}
