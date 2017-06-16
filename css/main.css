@@ -15,20 +15,28 @@ calendar highlighted day: #F5005B
 button background: #F5005B
 copyright text: #FFFFFF*/
 
+
 /*<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">*/
+
+
 /*font-family: 'PT Sans', sans-serif;*/
+
 
 /*BREAK POINTS
 tablet 545px
 desktop 768px*/
 
-/*Use cursor: pointer; on elements that either link or perform some functionality.*/
-/*Add helpful alternative text to the alt attribute of HTML img images.*/
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
 
+/*Use cursor: pointer; on elements that either link or perform some functionality.*/
+
+
+/*Add helpful alternative text to the alt attribute of HTML img images.*/
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
   font-family: 'PT Sans', sans-serif;
@@ -37,13 +45,13 @@ html {
 body {
   margin: 0;
 }
+
 nav {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   margin: 0px;
   font-size: .75em;
-
 }
 
 nav a {
@@ -54,51 +62,65 @@ nav a {
   align-items: center;
   justify-content: center;
 }
-nav a:first-child{
+
+nav a:first-child {
   background-color: #00A5BF;
 }
+
 nav a:nth-child(2) {
   background-color: #00B7D3;
 }
+
 nav a:nth-child(3) {
   background-color: #00D5E7;
 }
+
 nav a:nth-child(4) {
   background-color: #7DDFE8;
   height: 40%
 }
-#logo{
+
+#logo {
   background: #F5005B;
   padding: .5em;
   height: 5em;
 }
-nav #footer-nav a:nth-child(4){
-background: red;}
 
-header, .wrap{
+nav #footer-nav a:nth-child(4) {
+  background: red;
+}
+
+header, .wrap {
   display: flex;
   width: 100%;
 }
+
 h2 {
   background: #0B1942;
   color: #FFFFFF;
   padding-left: 1em;
-
 }
+
+h3 {
+  margin-left: 3vw;
+  margin-bottom: 0;
+}
+
+
 /******    HOME   *******/
-.home-main-container {
-display: flex;
-flex-wrap: wrap;
 
+.home-main-container {
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .articles {
   width: 100%;
   line-height: 1.5;
   font-size: .75em;
-  padding: 1em;
-
-
+  padding: 0 1em 1em 1em;
 }
+
 .up-next-movies {
   background: #0B1942;
   color: #FFFFFF;
@@ -106,61 +128,71 @@ flex-wrap: wrap;
   width: 100%;
   margin: 0px;
   font-size: .75em;
-
 }
-.featured-poster{
+
+.featured-poster {
   background: #E2E2E2;
   padding: 1em;
   display: flex;
   flex-wrap: nowrap;
   color: #0B1942;
   justify-content: space-between;
-
 }
+
 .featured-text {
   width: 48%;
   padding: 1em;
 }
-.featured-poster img{
+
+.featured-poster img {
   /*width: 48%;*/
   height: 13.5em;
 }
 
-.posters-grid{
-    background: #E2E2E2;
-    padding: 1em;
-    display: flex;
-    flex-wrap: wrap;
-    color: #0B1942;
-    justify-content: space-between;
-  }
-  .posters-grid img{
-    /*width: 48%;*/
-    height: 13.5em;
-  }
-  .posters-grid div{
-width: 50%;
-line-height: 1.25;
+.posters-grid {
+  background: #E2E2E2;
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  color: #0B1942;
+  justify-content: space-between;
 }
+
+.posters-grid img {
+  /*width: 48%;*/
+  height: 13.5em;
+}
+
+.posters-grid div {
+  width: 50%;
+  line-height: 1.25;
+}
+
+
 /******   CALENDAR   *******/
+
 .calendar-container {
-width: 100%;
+  width: 100%;
 }
 
-table{
+table {
   background: #0B1942;
-  padding-top:2.5vw;
-  padding-bottom:8.5vw;
-
-
+  padding-top: 2.5vw;
+  padding-bottom: 8.5vw;
 }
-.calendar-container div{
+
+.calendar-container h2 {
+  margin-bottom: 0;
+}
+
+.calendar-container div {
   background: #0B1942;
   color: #FFFFFF;
   padding-left: 1em;
-  padding-top:3.5vw;
+  padding-top: 3.5vw;
   font-size: 1.5em;
 }
+
 td {
   background: #0B1942;
   border-bottom: 7.5vw solid white;
@@ -168,7 +200,69 @@ td {
   color: white;
 }
 
+.selected {
+  border-color: #F5005B;
+}
+
+
 /******   JOIN   *******/
-.join-main-container{
-  /*background: black;}*/
+
+.join-main-container {
+    padding: 0 1em 1em 1em;
+   }
+.profile-pic img {
+  border-radius: 50%;
+  width: 75%;
+  margin: 10px 25px 10px 30px;
+
+}
+.form {
+  font-size: .75em;
+  font-family: 'PT Sans', sans-serif;
+}
+.input_fields input {
+  border: .5px solid #E9ECF4;
+  width: 90%;
+  height: 2em;
+  margin-top: 10px;
+}
+
+textarea{
+  border: .5px solid #E9ECF4;
+  width: 90%;
+  height: 5em;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.input_fields,
+.addl-input,
+.checkboxes {
+padding-top: 10px;
+padding-bottom: 10px;
+}
+label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.button {
+  background: #F5005B;
+  border: none;
+  color: white;
+  padding: 10px;
+
+}
+.form {
+  margin-top: 10px;
+}
+
+
+@media only screen and (min-width: 545px) {
+nav,
+.articles,
+.posters-grid {
+  flex-wrap: nowrap;
+}
+.articles{
+  display: flex;
+}
 }
